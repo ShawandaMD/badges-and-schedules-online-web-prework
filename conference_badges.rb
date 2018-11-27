@@ -1,3 +1,5 @@
+require "pry"
+
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
@@ -8,6 +10,7 @@ end
 
 def assign_rooms(attendees)
   attendees.each_with_index.map {|x, index| "Hello, #{x}! You'll be assigned to room #{index += 1}!"}
+binding.pry
 end
 assign_rooms(attendees)
 
