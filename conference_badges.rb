@@ -10,12 +10,12 @@ end
 
 def assign_rooms(attendees)
   attendees.each_with_index.map {|x, index| "Hello, #{x}! You'll be assigned to room #{index += 1}!"}
-binding.pry
+#binding.pry
 end
-assign_rooms([attendees])
 
-#def printer(attendees)
-#  batch_badge_creator(attendees).each {|x| puts x}
-#end 
- # assign_rooms(attendees).each {|y| puts y}
-#end
+
+def printer(attendees)
+  batch_badge_creator(attendees).each {|x| puts x}
+end 
+  assign_rooms(attendees).each {|y| puts y}
+end
