@@ -19,3 +19,4 @@ def printer(attendees)
 end 
   assign_rooms(attendees).each {|y| puts y}
 end  
+end
